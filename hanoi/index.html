@@ -1,0 +1,119 @@
+<!-- $( '#my-unordered-list li' ).click(function() {
+  alert( $( this ).text() );
+});
+
+var detachedListItem = $( '#my-unordered-list li' ).first().detach();
+
+// do something complicated with the list item
+
+detachedListItem.appendTo( '#my-unordered-list' );
+detachedListItem.trigger( 'click' ); // alert! -->
+
+
+
+<html>
+<head>
+  <script src="jquery-1.9.1.js"></script>
+  <script src="underscore.js"></script>
+  <script src="hanoi.js"></script>
+  <script src="towersUI.js"></script>
+
+  <style>
+
+    .stack {
+      float: left;
+
+      height: 200px;
+      width: 200px;
+/*      position: relative;*/
+    }
+
+    .unhighlighted {
+      background-color: #909090;
+    }
+
+    .highlighted {
+      background-color: lightblue;
+    }
+
+    .disk {
+      height: 60;
+    }
+
+    .slot {
+      height: 60;
+    }
+
+    .small_disk {
+      background-color: red;
+      margin: 0 auto;
+      border: 2px solid black;
+/*      position:absolute;*/
+      width:30%;
+    }
+
+    .medium_disk {
+      background-color: red;
+      margin: 0 auto;
+      border: 2px solid black;
+/*      position:absolute;*/
+      width:60%;
+
+    }
+
+    .large_disk {
+      background-color: red;
+      margin: 0 auto;
+      border: 2px solid black;
+/*      position:absolute;*/
+      width:90%;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="board-frame">
+      <div class="stack unhighlighted" id="stack0">
+
+        <div class= 'small_disk disk' id="slot00">
+
+        </div>
+        <div class='medium_disk disk' id="slot01">
+
+        </div>
+        <div class= 'large_disk disk' id="slot02">
+
+        </div>
+      </div>
+
+      <div class="stack unhighlighted" id="stack1">
+
+        <div class= 'slot' id="slot10">
+
+        </div>
+        <div class='slot' id="slot11">
+
+        </div>
+        <div class= 'slot' id="slot12">
+
+        </div>
+      </div>
+
+      <div class="stack unhighlighted" id="stack2">
+
+        <div class= 'slot' id="slot20">
+
+        </div>
+        <div class='slot' id="slot21">
+
+        </div>
+        <div class= 'slot' id="slot22">
+
+        </div>
+      </div>
+
+
+    </div>
+</body>
+</html>
